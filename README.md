@@ -9,12 +9,11 @@ Constraint programming uses the properties of the solutions to find the solution
 This methode can be easily used to solve this kind of restricted problems with amazing performances, but the computational cost augments drastictly when the number of solutions increases.
 However, solving the puzzle will be extremly fast if the number of solutions is small.
 
-Here, I implemened the classical sudoku constraint mathematically as 7 laws:
+Here, I implemened the classical sudoku constraint mathematically as 4 laws:
 - A cell can only contain number between 1 and 9, whith 0 representing an unknown state
-- The sum of a column is 45 (1 + 2 + ... + 9)
-- The sum of a line is 45
-- The sum of each subsquares is 45
-- Each line, column and subsquare can contain each number from 1 to 9 only once
+- A line can contain each number from 1 to 9 only once
+- A column can contain each number from 1 to 9 only once
+- A subsquare can contain each number from 1 to 9 only once
 
 For fun, I'll try (someday) to implement other solving methods and compare them.
 

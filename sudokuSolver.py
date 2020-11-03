@@ -81,16 +81,16 @@ class Sudoku :
         #sum of rows is 45
         for row in range(9):
             rowIndexes = [row * 9 + i for i in range(9)]
-            self.solver.addConstraint(ExactSumConstraint(45),
-                rowIndexes)
+            #self.solver.addConstraint(ExactSumConstraint(45),
+            #    rowIndexes)
             self.solver.addConstraint(AllDifferentConstraint(),
                 rowIndexes)
 
         #sum of columns is 45
         for col in range(9):
             colIndexes = [col + 9 * i for i in range(9)]
-            self.solver.addConstraint(ExactSumConstraint(45),
-                colIndexes)
+            #self.solver.addConstraint(ExactSumConstraint(45),
+            #    colIndexes)
             self.solver.addConstraint(AllDifferentConstraint(),
                 colIndexes)
 
@@ -98,8 +98,8 @@ class Sudoku :
         for i in range(3):
             for j in range(3):
                 squareIndexes = self.get_square_indexes(i, j)
-                self.solver.addConstraint(ExactSumConstraint(45),
-                        squareIndexes)
+                #self.solver.addConstraint(ExactSumConstraint(45),
+                #        squareIndexes)
                 self.solver.addConstraint(AllDifferentConstraint(),
                         squareIndexes)
         

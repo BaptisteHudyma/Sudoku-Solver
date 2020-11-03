@@ -1,0 +1,6 @@
+python-opencv==4.4.0.42
+imutils==0.5.3
+python-constraint==1.4.0
+scikit-image==0.17.2
+tesseract-ocr==0.0.1
+
